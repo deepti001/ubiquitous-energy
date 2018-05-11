@@ -35,7 +35,7 @@ h1{
 	border-radius: 7px;
 	box-shadow: 9px 12px 15px #D4A017;
 }
-label{
+.labelDesign{
 	display:inline-block;
 	background-color: #EE9A4D;
 	padding:5px;
@@ -43,6 +43,6 @@ label{
 	border:2px inset yellow;
 }
 
-label, button {
+.labelDesign, button {
 		margin:20px;
 }
