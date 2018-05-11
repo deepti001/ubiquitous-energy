@@ -5,19 +5,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="">
 	</head>
 	<body id="CoS">
 		<h1 id="fontChange"> Click on the Figures to see your Reaction Time!!	</h1>
+		<div id="startTheGameDiv"><button onclick="startTheGame()" class="startTheGame">Start The Game</button> </div>
 		<p> Your Reaction Time: <span id="timeCalculated" class="special"> </span> </p>
 		<p> Your Clicks Till Now: <span id="numberOfClicks" class="special"> </span> </p>
+
 		<div id="designs"> </div>
 		<div id="checkForContinue">
-			<p id="labelDesign"> Do You Want To Play Again</p><br>
-			<input type="radio" name="playAgain" value="1"> Yes
-			<input type="radio" name="playAgain" value="0"> No
-			<br>
-			<button onclick="playOrNot()"> Submit </button>
+				<p id="labelDesign"> Do You Want To Play Again</p><br>
+				<input type="radio" name="playAgain" value="1"> Yes
+				<input type="radio" name="playAgain" value="0"> No
+				<br>
+				<button onclick="playOrNot()" class="playOrNot">Submit</button>
+			
 		</div>
+		
 		<script type="text/javascript" src="script.js"> </script> 
 	</body>
 </html>
+
+
+
+
+
