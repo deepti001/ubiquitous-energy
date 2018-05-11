@@ -85,3 +85,21 @@ function sizeShifting() {
   document.getElementById("fontChange").style.fontSize = "xx-large";
   }	
 }
+
+function playOrNot(){
+    var x = document.getElementsByName("playAgain");
+    var i;
+    var txt= "";
+    for (i = 0; i < x.length; i++) {
+    	if (x[i].checked == true){
+        	txt = txt + x[i].value;
+    	}
+     }
+    if(txt == 0){
+    	document.getElementById("checkForContinue").style.display = "none";
+    	alert("ThankYou For Playing");
+    }
+    else if(txt==1){
+    	location.reload();
+    }
+}
