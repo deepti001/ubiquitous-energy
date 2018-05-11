@@ -43,6 +43,18 @@ h1{
 	border:2px inset yellow;
 }
 
-.labelDesign, button {
+.labelDesign, .playOrNot {
 		margin:20px;
+}
+
+.startTheGame{
+	padding: 15px;
+	background-color: #DAF7A6;
+	box-shadow: 7px 7px 15px red;
+	border:3px inset #FFC300;
+	border-radius: 3px;
+}
+#startTheGameDiv{
+	text-align: center;
+
 }
