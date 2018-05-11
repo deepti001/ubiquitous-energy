@@ -1,8 +1,10 @@
+document.getElementById("checkForContinue").style.display = "none";
 var startTime = new Date().getTime();
 var stopWatchTime = new Date().getTime();
 var counter = 0;
 
 window.onresize = sizeShifting;
+window.onload = sizeShifting;
 
 document.getElementById("designs").onclick = function() {
 	counter++;
@@ -22,12 +24,11 @@ function displayStatus(getTimeTaken, getCounter){
 }
 
 function designsAppearAgain(){
-		setTimeout(designShape,Math.random()*200);
+		setTimeout(designShape(),Math.random()*200);
 }
 
 function designShape(){
 	var width = (Math.random()*100) +50;
-	
 	var top = Math.random() * (window.innerHeight - width - 100) ;
 	var left = Math.random() * (window.innerWidth -width);
 	
@@ -57,40 +58,15 @@ function designShape(){
 	if (checkForContinue >= 5000)
 	{	
 		alert("You Click " + counter + " times in 30 seconds."+"\nDo You Want To Continue. Click on Continue or Stop");
-		stopWatchTime = startTime;
+		stopWatchTime = new Date().getTime();;
 		counter = 0;
 		displayStatus(0,0);
 		document.getElementById("designs").style.display = "none";
-		//window.location = "continueOrStopWebPage.html";
-		window.open("continueOrStopWebPage.html");
-		
-		//displayButtonToContinueOrStop();
+
+		document.getElementById("checkForContinue").style.display = "block";		
 	}
 }
-/*
-function displayButtonToContinueOrStop(){
-	  
-		var bodyE = document.getElementById("CoS");
-			
-		bodyE.innerHTML = "<h2> Click Continue Or Stop </h2>";
-		bodyE.innerHTML = "<div id='continueOrStop'> </div>";
-		document.getElementById("continueOrStop").innerHTML = "<div id='idContinue'> </div>  <div id='idStop'> </div> ";
-	
-	
-		var btnS = document.createElement("BUTTON");
-		var tSNode = document.createTextNode("Stop");
-		btnS.appendChild(tSNode);
-		var designsDiv = document.getElementById("idStop");
-		designsDiv.appendChild(btnS);
-		
-		var btnC = document.createElement("BUTTON");
-		var tCNode = document.createTextNode("Continue");
-		btnC.appendChild(tCNode);
-		var designsDiv = document.getElementById("idContinue");
-		designsDiv.appendChild(btnC);
-	
-}
-*/
+
 function colorFiller(){
 	var character = "0123456789ABCDEF".split("");
 	var fillColor = "#";
