@@ -6,10 +6,13 @@ body{
 }
 h1{
 	text-align: center;
-	margin-top: 20px;
-	color: #574DD0;
+	margin-top: 10px;
+	color: olive;
 	width:100%;
 	font-size: xx-large;	
+	background-color: khaki;
+	margin-top: 0;
+	padding:15px;
 }
 #designs{
 	width:100px;
@@ -19,4 +22,27 @@ h1{
 }
 .special{
 	font-weight:bold;
+}
+#checkForContinue{
+	background-color:#C68E17;
+	min-width:20%;
+	max-width:200px;
+	height:150px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border:10px solid #8A4117;
+	border-radius: 7px;
+	box-shadow: 9px 12px 15px #D4A017;
+}
+label{
+	display:inline-block;
+	background-color: #EE9A4D;
+	padding:5px;
+	font-family: "Comic Sans MS" , helvetica, arial;
+	border:2px inset yellow;
+}
+
+label, button {
+		margin:20px;
 }
