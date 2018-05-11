@@ -1,4 +1,7 @@
 document.getElementById("checkForContinue").style.display = "none";
+
+function startTheGame(){
+document.getElementById("startTheGameDiv").style.display = "none";
 var startTime = new Date().getTime();
 var stopWatchTime = new Date().getTime();
 var counter = 0;
@@ -55,7 +58,7 @@ function designShape(){
 	document.getElementById("designs").style.backgroundColor = colorFiller();
 	
 	var checkForContinue = startTime - stopWatchTime ;
-	if (checkForContinue >= 30000)
+	if (checkForContinue >= 5000)
 	{	
 		alert("You Click " + counter + " times in 30 seconds."+"\nDo You Want To Continue. Click on Continue or Stop");
 		stopWatchTime = new Date().getTime();;
@@ -63,7 +66,9 @@ function designShape(){
 		displayStatus(0,0);
 		document.getElementById("designs").style.display = "none";
 
-		document.getElementById("checkForContinue").style.display = "block";		
+		document.getElementById("checkForContinue").style.display = "block";
+
+		
 	}
 }
 
@@ -86,8 +91,9 @@ function sizeShifting() {
   }	
 }
 
+}
 function playOrNot(){
-    var x = document.getElementsByName("playAgain");
+	var x = document.getElementsByName("playAgain");
     var i;
     var txt= "";
     for (i = 0; i < x.length; i++) {
@@ -98,6 +104,7 @@ function playOrNot(){
     if(txt == 0){
     	document.getElementById("checkForContinue").style.display = "none";
     	alert("ThankYou For Playing");
+
     }
     else if(txt==1){
     	location.reload();
