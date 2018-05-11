@@ -55,7 +55,7 @@ function designShape(){
 	document.getElementById("designs").style.backgroundColor = colorFiller();
 	
 	var checkForContinue = startTime - stopWatchTime ;
-	if (checkForContinue >= 5000)
+	if (checkForContinue >= 30000)
 	{	
 		alert("You Click " + counter + " times in 30 seconds."+"\nDo You Want To Continue. Click on Continue or Stop");
 		stopWatchTime = new Date().getTime();;
