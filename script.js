@@ -1,5 +1,6 @@
 document.getElementById("checkForContinue").style.display = "none";
 
+
 function startTheGame(){
 document.getElementById("startTheGameDiv").style.display = "none";
 var startTime = new Date().getTime();
