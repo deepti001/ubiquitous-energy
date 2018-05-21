@@ -5,11 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styles.css">
-		<link rel="stylesheet" type="text/css" href="">
 	</head>
 	<body id="CoS">
 		<h1 id="fontChange"> Click on the Figures to see your Reaction Time!!	</h1>
-		<div id="startTheGameDiv"><button onclick="startTheGame()" class="startTheGame">Start The Game</button> </div>
+		<div id="startTheGameDiv">
+			<button onclick="startTheGame()" class="startTheGame">Start The Game</button>
+			<p class="info">Plese Click on the Start The Game Button First. Then Click on Figures. In the End it will show you how many clicks you had in 30 Seconds along with consecutive reaction time</p>
+		</div>
 		<p> Your Reaction Time: <span id="timeCalculated" class="special"> </span> </p>
 		<p> Your Clicks Till Now: <span id="numberOfClicks" class="special"> </span> </p>
 
@@ -20,14 +22,8 @@
 				<input type="radio" name="playAgain" value="0"> No
 				<br>
 				<button onclick="playOrNot()" class="playOrNot">Submit</button>
-			
 		</div>
 		
 		<script type="text/javascript" src="script.js"> </script> 
 	</body>
 </html>
-
-
-
-
-
