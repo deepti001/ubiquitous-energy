@@ -3,21 +3,22 @@ body{
 	padding:0;
 	min-height: 500px;
 	min-width: 210px;
+	background-color: khaki;
 }
 h1{
 	text-align: center;
 	margin-top: 10px;
-	color: olive;
+	color: darkmagenta;
 	width:100%;
 	font-size: xx-large;	
-	background-color: khaki;
+	background-color: darkkhaki;
 	margin-top: 0;
 	padding:15px;
 }
 #designs{
 	width:100px;
 	height:100px;
-	background-color:green;
+	background-color:lawngreen;
 	position:relative;
 }
 .special{
@@ -56,5 +57,16 @@ h1{
 }
 #startTheGameDiv{
 	text-align: center;
+
+}
+
+.info{
+	font-size: 16px;
+	margin:3% 30%;
+	padding: 1%;
+	text-align: justify;
+	color:goldenrod;
+	border-radius: 15%;
+	background-color: red;
 
 }
